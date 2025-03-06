@@ -1,0 +1,18 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=ZloBlocker
+Name[ru]=ZloBlocker
+GenericName=Блокировщик хостов
+GenericName[ru]=Блокировщик хостов
+Comment=Блокировщик нежелательных хостов
+Comment[ru]=Блокировщик нежелательных хостов
+TryExec=/usr/bin/zloblocker
+Exec=/usr/bin/zloblocker
+Icon=/usr/share/icons/hicolor/scalable/apps/zloblocker.svg
+Terminal=true
+Categories=Network;Security;
+X-Astra-FlyDesktop=true
+X-Astra-StartMenu=true
+Keywords=hosts;block;security;
+StartupWMClass=zloblocker

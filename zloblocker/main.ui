@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <width>300</width>
+    <height>350</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>300</width>
+    <height>350</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>300</width>
+    <height>350</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>ZloBlocker</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QLabel" name="statusLabel">
+      <property name="text">
+       <string>Статус: готов к работе</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignLeft</set>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QComboBox" name="categoryComboBox">
+      <property name="currentText">
+       <string>Реклама и трекеры</string>
+      </property>
+      <property name="maxVisibleItems">
+       <number>5</number>
+      </property>
+      <property name="sizeAdjustPolicy">
+       <enum>QComboBox::AdjustToContents</enum>
+      </property>
+      <item>
+       <property name="text">
+        <string>Реклама и трекеры</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Зловредные ресурсы</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Фишинг</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>DNS-over-HTTPS</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Cryptojacking</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Другое</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+    <item>
+     <widget class="QScrollArea" name="scrollArea">
+      <property name="widgetResizable">
+       <bool>true</bool>
+      </property>
+      <property name="maximumHeight">
+       <number>180</number>
+      </property>
+      <widget class="QWidget" name="checkboxContainer">
+       <layout class="QVBoxLayout" name="checkboxLayout">
+        <property name="spacing">
+         <number>5</number>
+        </property>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="updateButton">
+      <property name="text">
+       <string>Обновить файл hosts</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="scheduleButton">
+      <property name="text">
+       <string>Создать задание в планировщике</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="removeCustomEntriesButton">
+      <property name="text">
+       <string>Удалить добавленные записи</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>Файл</string>
+    </property>
+    <addaction name="actionAbout"/>
+    <addaction name="actionExit"/>
+   </widget>
+   <addaction name="menuFile"/>
+  </widget>
+  <action name="actionAbout">
+   <property name="text">
+    <string>О программе</string>
+   </property>
+  </action>
+  <action name="actionExit">
+   <property name="text">
+    <string>Выход</string>
+   </property>
+  </action>
+ </widget>
+</ui>

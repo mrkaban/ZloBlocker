@@ -1,0 +1,3 @@
+PySide2>=5.15.0
+requests>=2.25.0
+pywin32>=228; platform_system=="Windows"
