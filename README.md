@@ -5,4 +5,4 @@
 
 Для сборки deb-пакета python3 setup.py --command-packages=stdeb.command bdist_deb
 
-Для сборки под Windows pyinstaller --onedir --clean -y --noconsole --distpath ГПУТЬ_ДЛЯ_СОХРАНЕНИЯ_EXE\exe --icon zloblocker.ico --add-data "main.ui;." --name ZloBlocker --contents-directory "." main.py
+Для сборки под Windows pyinstaller --onedir --clean -y --noconsole --distpath ГПУТЬ_ДЛЯ_СОХРАНЕНИЯ_EXE\exe --icon zloblocker.ico --add-data "zloblocker.ico;." --add-data "main.ui;." --name ZloBlocker --contents-directory "." main.py
